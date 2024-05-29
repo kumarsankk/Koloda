@@ -282,7 +282,7 @@ Usage
     ```swift
     extension MyKolodaViewController: KolodaViewDelegate {
         func kolodaDidRunOutOfCards(_ koloda: KolodaView) {
-            koloda.reloadData()
+            koloda.resetCurrentCardIndex()
         }
 
         func koloda(_ koloda: KolodaView, didSelectCardAt index: Int) {
